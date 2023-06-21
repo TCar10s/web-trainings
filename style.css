@@ -1,0 +1,286 @@
+/* Custom properties */
+:root {
+  /* Colors */
+  --gray: #212121;
+  --primary: #192229;
+  --secondary: #4ad295;
+  --tertiary: #212e36;
+}
+
+/** Global **/
+
+/* Box model snippet */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* 1rem = 10px */
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+  /* background-image: linear-gradient(to top, #0b2239 0%, #4ad295 100%) */
+  background-color: #192229;
+  color: white;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 40%;
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}
+
+/* .shadow {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(202, 219, 232, 1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(202, 219, 232, 1);
+    box-shadow: 0px 5px 15px 0px rgba(202, 219, 232, 1);
+  } */
+
+.w-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+/** Typography **/
+
+h1 {
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.title span {
+  font-size: 2rem;
+}
+
+/** Nav **/
+
+.nav-bg {
+  background-color: var(--tertiary);
+}
+
+.nav-bg::before,
+.nav-bg::after {
+  content: '';
+  border: 1px solid #324452;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .nav-bg::before,
+  .nav-bg::after {
+    content: '';
+    border: none;
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile
+  @media (min-width: 480px) {} */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* Desktop
+  @media (min-width: 1140px) {} */
+
+.main-nav a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-nav a:hover {
+  background-color: var(--secondary);
+  color: black;
+}
+
+.hero {
+  background-image: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  /* .hero debe tener 'position: relative;' si el hijo requiere 'position: absolute;'*/
+  position: relative;
+}
+
+.content-hero {
+  position: absolute;
+  background-color: rgb(0 0 0 / 80%);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-hero h2,
+p {
+  color: #fff;
+}
+
+/** Main **/
+.main-bg {
+  background-color: var(--tertiary);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.content-main {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  column-gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .content-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+}
+
+/* Icon */
+.icon-svg {
+  background-color: white;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-svg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circle-svg h3 {
+  color: var(--secondary);
+}
+
+/** Form **/
+
+.form {
+  background-color: var(--tertiary);
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 50%;
+  }
+  .container-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+  }
+  .inputs-form:nth-child(3),
+  .inputs-form:nth-child(4) {
+    grid-column: 1 / 3;
+  }
+}
+
+.form legend {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.form fieldset {
+  border: none;
+}
+
+.inputs-form label {
+  display: block;
+  padding: 1rem 0 1rem 0;
+}
+
+.inputs-form input {
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 4rem;
+  padding: 1.5rem;
+}
+
+.inputs-form textarea {
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.button-submit {
+  margin-top: 2rem;
+}
+
+/** Footer **/
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
