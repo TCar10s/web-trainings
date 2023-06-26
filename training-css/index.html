@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pexels</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo" href="/">
+          <svg
+            width="40"
+            height="40"
+            class="DisplayNone_mobile-tablet__6iQd1 spacing_noMargin__Q_PsJ spacing_oversized-margin-right-50__Z6BXP spacing_desktop-margin-right-30__C4NEG spacing_mobile-margin-right-15__uM70E spacing_tablet-margin-right-15__zeT1z"
+            viewBox="0 0 50 50"
+          >
+            <g transform="translate(-3894 2762)">
+              <rect
+                width="50"
+                height="50"
+                rx="8"
+                transform="translate(3894 -2762)"
+                fill="#07a081"
+              ></rect>
+              <path
+                d="M32.671,44.73h7.091V37.935H41.9a5.657,5.657,0,1,0,0-11.314H32.671Zm10.763,3.622H29V23H41.9a9.271,9.271,0,0,1,1.53,18.435Z"
+                transform="translate(3880 -2773)"
+                fill="#fff"
+              ></path>
+            </g>
+          </svg>
+        </a>
+
+        <ul class="nav__options">
+          <!-- <li class="nav__option">
+            <button>Explorar</button>
+          </li>
+          <li class="nav__option">
+            <button>Licencia</button>
+          </li>
+          <li class="nav__option">
+            <button>Subir</button>
+          </li> -->
+          <li class="nav__option">
+            <a class="nav__join">Únete</a>
+          </li>
+          <li class="nav__option">
+            <i class="ti ti-menu-2 nav__menu"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="search">
+        <div class="search__content">
+          <h1 class="search__heading">
+            Las mejores fotos de stock gratis, imágenes libres de regalías y
+            vídeos compartidos por creadores.
+          </h1>
+
+          <form class="search__form">
+            <button class="search__form-type">
+              <i class="ti ti-photo"></i>
+              Fotos
+            </button>
+            <input placeholder="Busca fotos gratuitas" type="text" />
+            <button class="search__form-button">
+              <i class="ti ti-search"></i>
+            </button>
+          </form>
+
+          <div class="search__trends">
+            <span>Tendencias:&nbsp;</span>
+            <ul class="search__trends--list">
+              <li>tecnología,&nbsp;</li>
+              <li>paisaje,&nbsp;</li>
+              <li>oscuro,&nbsp;</li>
+              <li>comida,&nbsp;</li>
+              <li>michis.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="categories">
+        <ul class="categories__options">
+          <li class="categories__option">
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li class="categories__option">
+            <a href="#videos">vídeos</a>
+          </li>
+          <li class="categories__option">
+            <a href="#visitado">Lo más visitado</a>
+          </li>
+          <li class="categories__option">
+            <a href="#retos">Retos</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__header">
+          <h4>Fotos de stock gratuitas</h4>
+          <select id="types">
+            <option value="trends">Tendencias</option>
+            <option value="new">Lo nuevo</option>
+          </select>
+        </div>
+
+        <div class="gallery__content">
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/755834/pexels-photo-755834.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/17038981/pexels-photo-17038981/free-photo-of-animal-mascota-mono-hierba.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+          <article class="gallery__item">
+            <a href="#picture">
+              <img
+                src="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="picture"
+                loading="lazy"
+              />
+            </a>
+            <i class="ti ti-download"></i>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="sections">
+        <div class="social">
+          <h4 class="social__title">
+            Fotos y vídeos gratis de creadores con talento
+          </h4>
+          <p>Descarga una de las apps.</p>
+          <a href="#">
+            <i class="ti ti-brand-android"></i>
+          </a>
+
+          <ul class="social__networks">
+            <li>
+              <a href="#">
+                <i class="ti ti-brand-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti ti-brand-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti ti-brand-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti ti-brand-pinterest"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pexels">
+          <ul class="pexels__others">
+            <li>Fotos de stock gratuitas</li>
+            <li>Vídeos gratuitos</li>
+            <li>Búsquedas populares</li>
+            <li>Colecciones</li>
+            <li>Retos</li>
+            <li>Lo mas visitado</li>
+            <li>Otros complementos y aplicaciones</li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <ul class="company__options">
+            <li>Quiénes somos</li>
+            <li>Blog</li>
+            <li>Preguntas frecuentes</li>
+            <li>Sé un héroe de Pexels</li>
+            <li>Asóciate con Pexels</li>
+            <li>API de imagen y video</li>
+            <li>Regístrate</li>
+          </ul>
+        </div>
+
+        <div class="stock">
+          <ul class="stock__options">
+            <li>Fotografías en blanco y negro</li>
+            <li>Imágenes de cumpleaños</li>
+            <li>Vídeos empresariales gratuitos</li>
+            <li>Imágenes de año nuevo</li>
+            <li>Fondo de pantalla genial</li>
+            <li>Los mejores fondos de pantalla HD</li>
+            <li>Fondo of pantalla de galaxias</li>
+            <li>Fondo para pantalla de bloqueo</li>
+            <li>Fondo de pantalla 4k</li>
+            <li>Fondo de pantalla del iPhone</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="copyright">
+        <p>© 2023 Pexels</p>
+
+        <ul class="copyright__options">
+          <li>Términos y Condiciones</li>
+          <li>Política de Privacidad</li>
+          <li>Licencia</li>
+          <li>Impressum</li>
+          <li>Política de cookies</li>
+        </ul>
+
+        <button>
+          <i class="ti ti-globe"></i>
+          Español
+        </button>
+      </section>
+    </footer>
+  </body>
+</html>
