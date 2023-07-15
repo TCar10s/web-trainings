@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -53,20 +53,23 @@
         </a>
 
         <ul class="nav__options">
-          <!-- <li class="nav__option">
-            <button>Explorar</button>
+          <li class="nav__option">
+            <a class="nav__option--button">
+              Explorar
+              <i class="ti ti-chevron-down nav__option--button--arrow"></i>
+            </a>
           </li>
           <li class="nav__option">
-            <button>Licencia</button>
+            <a class="nav__option--button">Licencia</a>
           </li>
           <li class="nav__option">
-            <button>Subir</button>
-          </li> -->
+            <a class="nav__option--button">Subir</a>
+          </li>
           <li class="nav__option">
             <a class="nav__join">Únete</a>
           </li>
-          <li class="nav__option">
-            <i class="ti ti-menu-2 nav__menu"></i>
+          <li class="nav__option nav__option--">
+            <i class="ti ti-menu-2 nav__option--menu"></i>
           </li>
         </ul>
       </nav>
@@ -107,16 +110,16 @@
       <section class="categories">
         <ul class="categories__options">
           <li class="categories__option">
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio" id="inicio">Inicio</a>
           </li>
           <li class="categories__option">
-            <a href="#videos">vídeos</a>
+            <a href="#videos" id="videos">Vídeos</a>
           </li>
           <li class="categories__option">
-            <a href="#visitado">Lo más visitado</a>
+            <a href="#visitado" id="visitado">Lo más visitado</a>
           </li>
           <li class="categories__option">
-            <a href="#retos">Retos</a>
+            <a href="#retos" id="retos">Retos</a>
           </li>
         </ul>
       </section>
@@ -131,7 +134,7 @@
         </div>
 
         <div class="gallery__content">
-          <article class="gallery__item">
+          <article class="gallery__item gallery__item-margin">
             <a href="#picture">
               <img
                 src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600"
