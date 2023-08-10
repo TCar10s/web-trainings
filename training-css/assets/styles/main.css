@@ -28,7 +28,7 @@ a {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* GLOBAL BUTTON */
@@ -54,7 +54,7 @@ body {
 /* CUSTOM STYLES */
 
 .header {
-  background-image: url('../images/bg-header.jpeg');
+  background-image: url("../images/bg-header.webp");
   background-size: cover;
   padding: 1rem 1.5rem;
   min-height: 31.25rem;
@@ -311,10 +311,10 @@ body {
 .footer .sections {
   display: grid;
   grid-template-areas:
-    'company'
-    'social'
-    'pexels'
-    'stock';
+    "company"
+    "social"
+    "pexels"
+    "stock";
 
   letter-spacing: -0.015em;
   padding: 2rem 1rem;
@@ -407,14 +407,14 @@ body {
 @media (min-width: 900px) {
   .footer .sections {
     grid-template-areas:
-      'social pexels stock'
-      'social company stock';
+      "social pexels stock"
+      "social company stock";
     gap: 2rem;
   }
 }
 
 @media (min-width: 1000px) {
   .footer .sections {
-    grid-template-areas: 'social pexels company stock';
+    grid-template-areas: "social pexels company stock";
   }
 }
