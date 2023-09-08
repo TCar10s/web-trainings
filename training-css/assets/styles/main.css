@@ -19,8 +19,8 @@ li {
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -28,18 +28,18 @@ a {
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* GLOBAL BUTTON */
 .button {
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid var(--light-color);
-  outline: none;
-  cursor: pointer;
   background-color: var(--light-color);
+  border: 1px solid var(--light-color);
+  border-radius: 0.3rem;
+  cursor: pointer;
   font-weight: 700;
+  outline: none;
+  padding: 0.5rem 1rem;
 }
 
 .button-dark {
@@ -54,29 +54,29 @@ body {
 /* CUSTOM STYLES */
 
 .header {
-  background-image: url("../images/bg-header.webp");
+  background-image: url('../images/bg-header.webp');
   background-size: cover;
-  padding: 1rem 1.5rem;
-  min-height: 31.25rem;
   box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
+  min-height: 31.25rem;
+  padding: 1rem 1.5rem;
 }
 
 .nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav__options {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 1rem;
 }
 
 .nav__options .nav__option--menu {
-  font-size: 1.5rem;
   color: var(--light-color);
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .search {
@@ -85,16 +85,16 @@ body {
 }
 
 .search__content {
-  padding-top: 5.5rem;
   color: var(--light-color);
+  padding-top: 5.5rem;
   width: min(100%, 40rem);
 }
 
 .search__heading {
-  font-weight: 600;
   font-size: 33px;
-  line-height: 40px;
+  font-weight: 600;
   letter-spacing: -0.02em;
+  line-height: 40px;
   margin: 0;
 }
 
@@ -102,26 +102,26 @@ body {
   background-color: var(--light-color);
 
   border-radius: 0.5rem;
-  padding: 0.3rem;
-  margin-top: 2rem;
 
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0.3rem;
 }
 
 .search__form input {
   border: none;
-  padding: 0.9rem 0.5rem;
   outline: none;
-  width: 100%;
+  padding: 0.9rem 0.5rem;
   text-indent: 0.2rem;
+  width: 100%;
 }
 
 .search__form-button {
-  border: none;
-  outline: none;
   background-color: transparent;
+  border: none;
   color: var(--gray-color);
+  outline: none;
 }
 
 .search__form-type i,
@@ -134,20 +134,20 @@ body {
 }
 
 .search__form-type {
-  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  background: var(--button-radius-color);
+  border: 3px solid var(--light-gray-color);
 
   border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
   outline: none;
-  border: 3px solid var(--light-gray-color);
-  background: var(--button-radius-color);
 }
 
 .search__trends {
   display: flex;
-  margin-top: 2rem;
   font-weight: 700;
+  margin-top: 2rem;
 }
 
 .search__trends span {
@@ -160,8 +160,8 @@ body {
 
 .search__trends--list li:hover {
   color: hsla(0, 0%, 100%, 0.7);
-  transition: ease-in-out 0.5s;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
 }
 
 .nav__option .nav__option--button {
@@ -183,9 +183,8 @@ body {
 }
 
 .categories {
-  margin: 2.5rem 0rem;
-
   display: flex;
+  margin: 2.5rem 0rem;
   margin-left: 1rem;
 }
 
@@ -196,16 +195,16 @@ body {
 }
 
 .categories__option a {
-  color: var(--dark-color);
-  font-weight: 600;
   border-radius: 50px;
-  padding: 0.8rem 1.3rem;
+  color: var(--dark-color);
   cursor: pointer;
+  font-weight: 600;
+  padding: 0.8rem 1.3rem;
 }
 
 .categories__option a:target {
-  color: var(--light-color);
   background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 .categories__option a:target:hover {
@@ -215,27 +214,27 @@ body {
 
 .gallery {
   margin: 1rem;
-  padding: 1rem;
-  max-width: 1350px;
   margin: 0 auto;
+  max-width: 1350px;
+  padding: 1rem;
 }
 
 .gallery__header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .gallery__header select {
-  height: 2.5rem;
-  border-radius: 0.3rem;
-  padding: 0 0.5rem;
   border-color: var(--gray-color);
+  border-radius: 0.3rem;
+  height: 2.5rem;
+  padding: 0 0.5rem;
 }
 
 .gallery__header h4 {
-  font-size: 1.5rem;
   color: var(--dark-hover);
+  font-size: 1.5rem;
 }
 
 .gallery__content {
@@ -254,17 +253,17 @@ body {
 }
 
 .gallery__item {
-  position: relative;
   margin-top: 1rem;
+  position: relative;
 }
 
 .gallery__item i {
-  position: absolute;
-  right: 0.5rem;
   bottom: 0.5rem;
   color: var(--light-color);
-  padding: 0.8rem;
   font-size: 1.5rem;
+  padding: 0.8rem;
+  position: absolute;
+  right: 0.5rem;
 }
 
 .gallery__item i:hover {
@@ -275,8 +274,8 @@ body {
 
 .gallery__item img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -304,17 +303,17 @@ body {
 .footer {
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding-bottom: 2rem;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer .sections {
   display: grid;
   grid-template-areas:
-    "company"
-    "social"
-    "pexels"
-    "stock";
+    'company'
+    'social'
+    'pexels'
+    'stock';
 
   letter-spacing: -0.015em;
   padding: 2rem 1rem;
@@ -328,17 +327,17 @@ body {
 
 .social p {
   color: var(--font-gray-color);
-  margin: 0;
   font-size: 1rem;
-  line-height: 1.6rem;
 
   grid-area: social;
+  line-height: 1.6rem;
+  margin: 0;
 }
 
 .social__button {
+  align-items: center;
   color: var(--dark-color);
   display: inline-flex;
-  align-items: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -366,10 +365,10 @@ body {
 .company__options li a,
 .stock__options li a,
 .copyright__options li a {
-  font-size: 1.3rem;
-  line-height: 2rem;
   color: var(--font-gray-color);
   display: block;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .stock .stock__options {
@@ -383,8 +382,8 @@ body {
 }
 
 .copyright {
-  text-align: center;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .copyright .copyright__button {
@@ -406,15 +405,15 @@ body {
 
 @media (min-width: 900px) {
   .footer .sections {
-    grid-template-areas:
-      "social pexels stock"
-      "social company stock";
     gap: 2rem;
+    grid-template-areas:
+      'social pexels stock'
+      'social company stock';
   }
 }
 
 @media (min-width: 1000px) {
   .footer .sections {
-    grid-template-areas: "social pexels company stock";
+    grid-template-areas: 'social pexels company stock';
   }
 }
